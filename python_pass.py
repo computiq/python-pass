@@ -21,18 +21,13 @@ Instructions:
 """
 
 
+
 class StringOperations:
-    def reverse(self, to_be_reversed: str = None): return to_be_reversed[::-1]
-        # * returning the reversed value of passed text
-        # ! reverse function should be a one liner function that returns the reverse string to_be_reversed
-       
-        # raise NotImplemented('This method need to be implemented')
+    def reverse(self, *, to_be_reversed: str = None):
+        raise NotImplemented('This method need to be implemented')
+# overriding the function from inherited class and using it, 
 class ReversedString(StringOperations):
-    pass # ! we want to implement it later
-
-
-# * here we are going to Instantiate the class ReversedString
-reversedString=ReversedString()
-
-
-print( reversedString.reverse('Computiq'))
+   def reverse(self, *, to_be_reversed: str = None):
+        return to_be_reversed[::-1]
+reversed = ReversedString()
+print(reversed.reverse(to_be_reversed='Noaman Monther👏🏻'))
