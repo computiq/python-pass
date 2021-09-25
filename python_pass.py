@@ -9,6 +9,25 @@ Instructions:
 """
 
 
+
+
+"""
+* Noaman Monther Mahmood
+* YANHAD Coding Bootcamp (Tasks - 1)
+* Python Side 
+* Use Better Comments {for better experiance with this task solution}
+* https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
+
+"""
+
+
+
 class StringOperations:
     def reverse(self, *, to_be_reversed: str = None):
         raise NotImplemented('This method need to be implemented')
+# overriding the function from inherited class and using it, 
+class ReversedString(StringOperations):
+   def reverse(self, *, to_be_reversed: str = None):
+        return to_be_reversed[::-1]
+reversed = ReversedString()
+print(reversed.reverse(to_be_reversed='Noaman Monther👏🏻'))
