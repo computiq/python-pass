@@ -12,3 +12,12 @@ Instructions:
 class StringOperations:
     def reverse(self, *, to_be_reversed: str = None):
         raise NotImplemented('This method need to be implemented')
+
+
+class ReversedString(StringOperations):
+    def reverse(self, *, to_be_reversed: str = None):
+        return to_be_reversed[-1::-1] if to_be_reversed is not None else 'No Data'
+
+
+reverser = ReversedString()
+print(reverser.reverse(to_be_reversed="aab"))
