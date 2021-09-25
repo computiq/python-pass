@@ -1,5 +1,5 @@
 # python-pass
- code in [python_pass.py]
+ code in [python_pass.py](python_pass.py)
 1. Fork the repo
 2. Clone the repo to your machine
 3. resolve the pass task
