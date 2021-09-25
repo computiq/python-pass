@@ -1,6 +1,5 @@
 """
 Instructions:
-
 1. Create a class named ReversedString that inherits from StringOperations class
 2. Implement the function reverse
 3. reverse function should be a one liner function that returns the reverse string to_be_reversed
@@ -10,5 +9,11 @@ Instructions:
 
 
 class StringOperations:
-    def reverse(self, *, to_be_reversed: str = None):
+    def reverse(self,*,to_be_reversed: str=None ):
         raise NotImplemented('This method need to be implemented')
+class ReversedString(StringOperations):
+    def reverse(self, to_be_reversed: str = None):
+        return to_be_reversed[-1::-1]
+rv=ReversedString()
+
+print(rv.reverse(input("enter : ")))
