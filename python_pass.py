@@ -1,11 +1,10 @@
 """
-Instructions:
 
-1. Create a class named ReversedString that inherits from StringOperations class
-2. Implement the function reverse
-3. reverse function should be a one liner function that returns the reverse string to_be_reversed
-4. Instantiate the class ReversedString
-5. Print to show your function implementation result
+1. Created a class named ReversedString that inherits from StringOperations class
+2. Implemented the function reverse
+3. reverse function is a one liner function that returns the reverse string to_be_reversed
+4. Instantiated the class ReversedString
+5. Printed to show the function implementation result
 """
 
 class StringOperations:
