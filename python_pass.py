@@ -10,13 +10,14 @@ Instructions:
 
 
 class StringOperations:
-    def reverse(self, *, to_be_reversed: str = None):
-          to_be_reversed = "Hello World"[::-1]
-          return to_be_reversed
+    def reverse(self, *, to_be_reversed: str = "Hello World"):
+          return to_be_reversed[::-1]
 
 class ReversedString(StringOperations):
     pass
 
+
+      
       
 ob = ReversedString()
 
