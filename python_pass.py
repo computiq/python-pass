@@ -10,5 +10,13 @@ Instructions:
 
 
 class StringOperations:
-    def reverse(self, *, to_be_reversed: str = None):
-        raise NotImplemented('This method need to be implemented')
+    def reverse(to_be_reversed: str = None):
+        return to_be_reversed[::1]
+    
+class ReversedString(StringOperations):
+    pass
+
+
+reversedInput = ReversedString
+
+print(reversedInput.reverse(input("Write your string :")))
