@@ -11,7 +11,7 @@ Instructions:
 
 class StringOperations:
     def reverse(to_be_reversed: str = None):
-        return to_be_reversed[::1]
+        return to_be_reversed[::-1]
     
 class ReversedString(StringOperations):
     pass
@@ -19,4 +19,4 @@ class ReversedString(StringOperations):
 
 reversedInput = ReversedString
 
-print(reversedInput.reverse(input("Write your string :")))
+print(reversedInput.reverse(input("Write your string : ")))
