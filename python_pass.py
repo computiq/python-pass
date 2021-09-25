@@ -10,15 +10,14 @@ Instructions:
 
 
 class StringOperations:
-    def __init__(self, to_be_reversed):
-        self.str = to_be_reversed
-
-    def reverse(self):
-        return self.str[-1: : -1]
+    def reverse(self, *, to_be_reversed: str = None):
+        raise NotImplemented('This method need to be implemented')
 
 class ReversedString(StringOperations):
-    pass
+    
+    def reverse(self, *, to_be_reversed: str = None):
+        return to_be_reversed[-1: :-1]
         
 if __name__ == "__main__":
-    rs = ReversedString("Ali")
-    print('Reversed String=', rs.reverse())
+    rs = ReversedString()
+    print('Reversed String=', rs.reverse(to_be_reversed="qitupmoC olleH"))
