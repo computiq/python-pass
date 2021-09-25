@@ -10,5 +10,23 @@ Instructions:
 
 
 class StringOperations:
+
     def reverse(self, *, to_be_reversed: str = None):
-        raise NotImplemented('This method need to be implemented')
+        try:
+            return to_be_reversed[:: -1]
+        except TypeError:
+            print("There is no String to be reversed")
+            quit()
+
+
+class ReversedString(StringOperations):
+
+    # I can solve the problem by using constructor also
+    # def __init__(self, to_be_reversed):
+    #     self.to_be_reversed = to_be_reversed
+    pass
+
+
+# my_phrase = ReversedString( 'Hi How Are you') ##when using constructor
+my_phrase = ReversedString()
+print(my_phrase.reverse(to_be_reversed='Hello YANHAD'))
