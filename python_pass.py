@@ -10,5 +10,18 @@ Instructions:
 
 
 class StringOperations:
-    def reverse(self, *, to_be_reversed: str = None):
-        raise NotImplemented('This method need to be implemented')
+    def reverse(self , * , to_be_reversed: str = None):
+        raise NotImplemented("This method need to be implemented")
+
+
+class ReversedString(StringOperations):
+
+    def reverse(self , to_be_reversed:  str =None):
+        word = ' '
+        for i in to_be_reversed:
+            word = i+word
+        return word
+
+string = ReversedString()
+word='Programming'
+print(string.reverse(word))
