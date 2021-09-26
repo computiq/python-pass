@@ -20,4 +20,4 @@ print ("The original string  is : ",end="")
 print (string)
   
 print ("The reversed string is : ",end="")
-print (Instant.reverse(string));
+print (Instant.reverse(to_be_reversed=string));
