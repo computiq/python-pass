@@ -11,11 +11,12 @@ Instructions:
 
 class StringOperations:
     def reverse(self, *, to_be_reversed: str = None):
-        return to_be_reversed[::-1]
+        raise NotImplemented('This method need to be implemented')
 
 class ReversedString(StringOperations):
-    def __init__(self, text_to_be_reverse):
-        result = self.reverse(to_be_reversed = text_to_be_reverse)
-        print(result)
+    def reverse(self, *, to_be_reversed: str = None):
+        return to_be_reversed[:: -1]
 
-ReversedString("The best way to predict the future, is to create it.")
+rvStr = ReversedString()
+
+print(rvStr.reverse(to_be_reversed = "The best way to predict the future, is to create it."))
