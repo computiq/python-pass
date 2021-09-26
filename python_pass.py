@@ -16,8 +16,7 @@ class StringOperations:
 
 class ReversedString(StringOperations):
 	def reverse(self, *, to_be_reversed: str = None):
-		to_be_reversed2 = to_be_reversed[::-1]
-		return to_be_reversed2
+		return to_be_reversed[::-1]
 
 ob=ReversedString()
 print(ob.reverse(to_be_reversed="ComputeIQ-Mohammad"))
