@@ -12,3 +12,17 @@ Instructions:
 class StringOperations:
     def reverse(self, *, to_be_reversed: str = None):
         raise NotImplemented('This method need to be implemented')
+        
+# ---- class inherits from StringOperations class:  ----
+
+class ReversedString(StringOperations):
+    def reverse(self, *, to_be_reversed: str = None):
+        return to_be_reversed[::-1]
+
+# ---- Instantiate the class ReversedString: ----
+
+var1 = ReversedString()
+
+# ---- Print to show the function implementation result: ----
+
+print(var1.reverse(to_be_reversed="Hi, i'm Dena!"))
