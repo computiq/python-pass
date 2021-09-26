@@ -10,12 +10,15 @@ Instructions:
 
 
 class StringOperations:
-    def reverse(self, *, to_be_reversed: str ):return to_be_reversed[::-1]
-       
-class ReversedString (StringOperations):
-    def __init__(self):
-        super().reverse()
+    def reverse(self, *, to_be_reversed: str = None):
+        raise NotImplemented('This method need to be implemented')
 
-message=ReversedString.reverse(self=None,to_be_reversed="esrever si siht nohtyP olleH")
+class ReversedString(StringOperations):
+    def reverse(self, *, to_be_reversed: str = None): 
+        return to_be_reversed[::-1]
+
+
+message = ReversedString();
+print(message.reverse(to_be_reversed="esrever si siht nohtyP olleH"))
+
 #the output= Hello Python this is reverse
-print(message)
