@@ -8,11 +8,12 @@
 """
 
 class StringOperations:
-    def reverse(self,to_be_reversed: str = None):
-        return to_be_reversed[::-1]
+    def reverse(self, *, to_be_reversed: str = None):
+        raise NotImplemented('This method need to be implemented')
 
 class ReversedString(StringOperations):
-    pass
+    def reverse(self, *, to_be_reversed: str = None):
+        return to_be_reversed[::-1]
 Instant=ReversedString();
 string = "computiq python-pass"
 print ("The original string  is : ",end="")
@@ -20,5 +21,3 @@ print (string)
   
 print ("The reversed string is : ",end="")
 print (Instant.reverse(string));
-
-
