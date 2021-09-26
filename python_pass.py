@@ -12,3 +12,14 @@ Instructions:
 class StringOperations:
     def reverse(self, *, to_be_reversed: str = None):
         raise NotImplemented('This method need to be implemented')
+
+
+class ReversedString(StringOperations):
+
+    def reverse(self, *, override: str = None):
+        return override[::-1]
+     
+
+
+name = ReversedString()
+print(name.reverse(override="hello"))
